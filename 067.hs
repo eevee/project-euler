@@ -134,14 +134,12 @@ triangle = [ [59],
 -- The ultimate algorithm here is to find the maximum possible value we COULD
 -- have walked so far at each row in the triangle, until we know the maximum
 -- for every endpoint in the last row.  The answer is then the max of those.
-collapseTwoRows :: [Integer] -> [Integer] -> [Integer]
-collapseTwoRows (a:[]) (b:[]) = [a + b]
+collapseTwoRows (a:[])     (b:[]) = [a + b]
 collapseTwoRows (a1:a2:as) (b:bs) = (b + max a1 a2) : (collapseTwoRows (a2:as) bs)
 
 -- Uses collapseTwoRows to collapse the triangle into a single array of the
 -- maximum possible sums reachable at each element on the bottom row.
-collapsedTriangle :: [[Integer]] -> [Integer]
-collapsedTriangle (a:[])  = a
-collapsedTriangle (a:b:c) = collapsedTriangle ((collapseTwoRows (0:a) b) : c)
+collapsedTriangle (a:[])     = a
+collapsedTriangle (a1:a2:as) = collapsedTriangle ((collapseTwoRows (0:a1) a2) : as)
 
 main = putStrLn ((show . maximum . collapsedTriangle) triangle)
