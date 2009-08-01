@@ -28,7 +28,7 @@ You can, technically, execute this monstrosity with xsltproc:
 Unfortunately, xslt complains about recursion and requires that you change the
 maxdepth.  More unfortunately, after you do this, xsltproc segfaults.
 
-I actually did the final computation in Opera (in x minutes).  Normally the
+I actually did the final computation in Opera (in ~30 minutes).  Normally the
 rules require that the program can be executed from a command line.  I maintain
 that this program CAN be executed from a command line; segfaulting libxml2 is
 hardly my fault.  Nitpicky readers are welcome to find a way to run Opera
