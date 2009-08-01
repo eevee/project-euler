@@ -1,0 +1,39 @@
+<!-- PROBLEM 14: Find the longest sequence using a starting number under one
+million. -->
+<!--
+The following iterative sequence is defined for the set of positive integers:
+
+n → n/2 (n is even)
+n → 3n + 1 (n is odd)
+
+Using the rule above and starting with 13, we generate the following sequence:
+13 → 40 → 20 → 10 → 5 → 16 → 8 → 4 → 2 → 1
+
+It can be seen that this sequence (starting at 13 and finishing at 1) contains
+10 terms. Although it has not been proved yet (Collatz Problem), it is thought
+that all starting numbers finish at 1.
+
+Which starting number, under one million, produces the longest chain?
+-->
+<!--
+This file merely contains the "data", which in this case is the upper bound of
+the search space: one million.
+
+The actual "code" is contained in 014.xsl.
+
+You can, technically, execute this monstrosity with xsltproc:
+
+        xsltproc 014.xml
+
+Unfortunately, xslt complains about recursion and requires that you change the
+maxdepth.  More unfortunately, after you do this, xsltproc segfaults.
+
+I actually did the final computation in Opera (in x minutes).  Normally the
+rules require that the program can be executed from a command line.  I maintain
+that this program CAN be executed from a command line; segfaulting libxml2 is
+hardly my fault.  Nitpicky readers are welcome to find a way to run Opera
+non-interactively from the command line.
+-->
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="014.xsl" type="text/xsl"?>
+<maximum>1000000</maximum>
