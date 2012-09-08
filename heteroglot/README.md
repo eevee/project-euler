@@ -29,9 +29,32 @@ stick to the following:
   excessively large or malformed parameters.)
 
 
-# Unusables
+# Languages used
 
-For reference, the following languages have been attempted, but have been ruled
-_unusable_ by executive decision.
+* [Problem 1: Ruby](001.rb)
+
+    _Add all the natural numbers below one thousand that are multiples of 3 or 5._
+
+* Problem 2: C
+* Problem 3: C++
+* Problem 4: x86 assembly
+* Problem 5: Brainfuck
+* Problem 6: Whitespace
+* Problem 7: MUMPS
+* Problem 8: vimscript
+* Problem 9: LOLcode
+* Problem 10: Standard ML
+* Problem 11: Bash
+* Problem 12: Prolog
+* Problem 13: Lua
+* Problem 14: XSLT
+* Problem 15: COBOL
+* ...
+* Problem 67: Haskell
+
+## Declared unusable
+
+For posterity, the following languages have been attempted in the past, but
+have been ruled _unusable_ by executive decree.
 
 * Malbolge
