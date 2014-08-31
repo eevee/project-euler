@@ -4,6 +4,8 @@
 " Find the greatest product of five consecutive digits in the 1000-digit
 " number.
 
+" Run me with: vim -S 008.vim
+
 " Print data.  This deliberately leaves off newlines, since I'd have to strip
 " them anyway, but preserves the block from the problem
 execute "normal a73167176531330624919225119674426574742355349194934\<Esc>"

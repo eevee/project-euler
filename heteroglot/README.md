@@ -3,8 +3,16 @@ used twice.
 
 Each program begins with a comment containing the entire problem description.
 When run, each program prints the solution and a single newline to standard
-output.  There are no Makefiles or other compilation aids here; with very few
-exceptions, solutions should only require a single source file.
+output.
+
+Programs are each a single source file named `nnn.ext`.  (Unless they're not —
+see XSLT.) Most can be compiled/run by giving the filename to a standard
+compiler/interpreter.  For esoteric runtimes (consider vimscript), the source
+may contain brief instructions on how to get the code to run, but this is only
+done when absolutely necessary.
+
+Note that when it matters, a POSIX-compatible shell is assumed, because I'm
+running Linux.
 
 
 # Rules
@@ -75,6 +83,12 @@ stick to the following:
 
 * Problem 15: COBOL  
     _Starting in the top left corner in a 20 by 20 grid, how many routes are there to the bottom right corner?_
+
+* Problem 16: Pascal  
+    _Power digit sum_
+
+* Problem 17: Inform7  
+    _Number letter counts_
 
 * ...
 
