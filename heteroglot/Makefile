@@ -25,7 +25,7 @@ all:
 # These are the paths on my machine.  See the link above for where stuff might
 # end up on OS X.
 INFORM7_NI=/usr/libexec/gnome-inform7/ni
-INFORM7_RULES=/usr/share/gnome-inform7/Extensions
+INFORM7_ROOT=/usr/share/gnome-inform7
 INFORM7_INFORM6=/usr/libexec/gnome-inform7/inform6
 .PHONY: 017
 017:
@@ -35,7 +35,7 @@ INFORM7_INFORM6=/usr/libexec/gnome-inform7/inform6
 	cp 017.ni $(INFORM7_TEMPDIR)/Source/story.ni
 
 	# Compile inform7 to inform6
-	$(INFORM7_NI) -rules $(INFORM7_RULES) -extension=z8 -package $(INFORM7_TEMPDIR)
+	$(INFORM7_NI) -internal $(INFORM7_ROOT) -format=z8 -project $(INFORM7_TEMPDIR)
 
 	# Compile inform6 to a z-machine blob
 	$(INFORM7_INFORM6) -w -v8 $(INFORM7_TEMPDIR)/Build/auto.inf 017.z8

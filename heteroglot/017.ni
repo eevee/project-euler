@@ -67,8 +67,7 @@ When play begins:
 		let letters be "[n in words]";
 		repeat with i running from 1 to the number of characters in letters:
 			if character number i in letters is in lower case:
-				let count be count plus one;
-	now the left hand status line is "[count]";
+				increment count;
 	say count;
 	[Can't use "try quitting the game" here, because that asks for confirmation.]
 	[This rule is what fires when you type QUIT at a game-over prompt.]
