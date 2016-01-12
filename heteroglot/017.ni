@@ -43,25 +43,11 @@ The story creation year is 2014.
 
 Use the serial comma.
 
-[This is to get rid of some extraneous default output.]
-The display banner rule is not listed in the startup rulebook.
-The initial room description rule is not listed in the startup rulebook.
-
-[Get rid of the status line, which causes the room name to be printed.]
-Rule for constructing the status line:
-	rule succeeds.
-
-[Remove the "are you sure?" prompt.]
-The quit the game rule is not listed in the carry out quitting the game rulebook.
-
 [Need a room to stick the player in, or this won't compile at all.]
 X is a room.
 
 [Yes, in fact, inform7 requires literal tabs for indentation here, and doesn't allow blank lines inside rules.  Alas.]
 When play begins:
-	[Remove the prompt entirely.  Can't do this declaratively, because it conflicts with the Standard Rules.]
-	now the command prompt is "";
-	[Alright, here we go, the actual problem!]
 	let count be 0;
 	repeat with n running from 1 to 1000:
 		let letters be "[n in words]";
