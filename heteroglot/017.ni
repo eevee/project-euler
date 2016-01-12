@@ -51,7 +51,7 @@ The initial room description rule is not listed in the startup rulebook.
 Rule for constructing the status line:
 	rule succeeds.
 
-[Remove the "are you sure? prompt.]
+[Remove the "are you sure?" prompt.]
 The quit the game rule is not listed in the carry out quitting the game rulebook.
 
 [Need a room to stick the player in, or this won't compile at all.]
